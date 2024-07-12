@@ -1,17 +1,50 @@
 import React from 'react';
+import { BrowserRouter as Router, Routes, Route } from 'react-router-dom';
 import Encabezado from './componentes/Encabezado';
 import PagWeb from './componentes/PagWeb';
-import LoginForm from './componentes/LoginForm';
+import LoginForm from './componentes/formularios/LoginForm';
+import RegisterForm from './componentes/formularios/RegisterForm';
+import InterfazApp from './componentes/InterfazApp';
 import './App.css';
 
-const App = () => {
+function App() {
   return (
-    <div className="App">
-      <Encabezado /> {/* Encabezado primero */}
-      <PagWeb /> {/* Contenido de la página después del encabezado */}
-      <LoginForm /> {/* Formulario de inicio de sesión al final */}
-    </div>
+    <Router>
+      <div className="App">
+        <Routes>
+          <Route
+            path="/"
+            element={
+              <>
+                <Encabezado />
+                <PagWeb />
+              </>
+            }
+          />
+          <Route
+            path="/login"
+            element={
+              <>
+                <Encabezado />
+                <LoginForm />
+              </>
+            }
+          />
+          <Route
+            path="/register"
+            element={
+              <>
+                <Encabezado />
+                <RegisterForm />
+              </>
+            }
+          />
+          <Route path="/interfaz" element={<InterfazApp />} />
+        </Routes>
+      </div>
+    </Router>
   );
-};
+}
 
 export default App;
+

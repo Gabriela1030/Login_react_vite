@@ -1,40 +1,43 @@
 .nav-main {
-    font-size: 17px;
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
-    height: 150px;
-    padding: 20px 0;
-    background-color: #ffffff;
-  }
-  
-  .nav-brand {
-    width: 150px; /* Ajusta el tamaño del logo según sea necesario */
-  }
-  
-  .nav-menu {
-    display: flex;
-    list-style: none;
-    margin: 0;
-    padding: 0;
-  }
-  
-  .nav-menu li {
-    margin: 0 15px;
-  }
-  
-  .nav-menu a {
-    text-decoration: none;
-    color: #000;
-  }
-  
-  .nav-menu a:hover {
-    border-bottom: 2px solid #000;
-  }
-  
-  .nav-brand img {
-    max-width: 20px; /* Ajusta el tamaño máximo del logo */
-    height: auto; /* Para mantener la proporción de aspecto */
-  }
-  
-  
+  font-size: 17px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  height: 100px;
+  width: 100%;
+  padding: 10px 0;
+  background-color: #ffffff;
+}
+
+.nav-brand {
+  width: 170px;
+}
+
+.nav-menu {
+  display: flex;
+  list-style: none;
+  margin: 0;
+  padding: 0;
+}
+
+.nav-menu li {
+  margin: 0 40px;
+}
+
+.nav-menu a {
+  text-decoration: none;
+  color: #000;
+}
+
+.nav-menu a:hover {
+  border-bottom: 2px solid #000;
+}
+
+.nav-search {
+  margin-left: auto;
+}
+
+.nav-brand img {
+  max-width: 150px;
+  height: auto;
+}

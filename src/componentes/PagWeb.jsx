@@ -5,10 +5,7 @@ const PagWeb = () => {
   return (
     <div className="container">
       <header className="showcase">
-        <div className="showcase-content">
-          <h2>¡Bienvenido a ACCOEFI!</h2>
-          <p>La mejor solución para gestionar tus finanzas.</p>
-        </div>
+        
       </header>
       <section className="planes-precios">
         <h2>Planes y Precios</h2>
@@ -70,3 +67,4 @@ const PagWeb = () => {
 };
 
 export default PagWeb;
+
