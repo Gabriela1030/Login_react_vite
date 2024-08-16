@@ -8,7 +8,7 @@ const LoginForm = () => {
 
   const handleSubmit = (event) => {
     event.preventDefault();
-    // Aquí puedes agregar la lógica de autenticación
+    
     navigate('/interfaz');
   };
 
