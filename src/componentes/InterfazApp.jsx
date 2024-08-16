@@ -6,7 +6,6 @@ const InterfazApp = () => {
   const navigate = useNavigate();
 
   const handleLogout = () => {
-    // Aquí puedes agregar la lógica para limpiar el estado de sesión, si es necesario.
     navigate('/login');
   };
 
